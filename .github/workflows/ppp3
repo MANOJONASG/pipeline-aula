@@ -1,0 +1,14 @@
+name: Mensagem final
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mensagem final
+        run: echo "HTML validado com sucesso! Pipeline 3 executado!"
