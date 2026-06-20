@@ -1,0 +1,9 @@
+name: Verificar HTML básico
+on: [push]
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checar se index.html existe
+        run: test -f index.html
